@@ -26,13 +26,13 @@
   </url>
   
   <url>
-    <loc>https://alexfreestone.co.uk/categories/development/</loc>
+    <loc>https://alexfreestone.co.uk/tags/development/</loc>
     <lastmod>2014-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://alexfreestone.co.uk/tags/development/</loc>
+    <loc>https://alexfreestone.co.uk/categories/development/</loc>
     <lastmod>2014-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -50,25 +50,25 @@
   </url>
   
   <url>
-    <loc>https://alexfreestone.co.uk/categories/golang/</loc>
-    <lastmod>2014-07-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://alexfreestone.co.uk/tags/golang/</loc>
     <lastmod>2014-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://alexfreestone.co.uk/categories/hugo/</loc>
+    <loc>https://alexfreestone.co.uk/categories/golang/</loc>
     <lastmod>2014-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://alexfreestone.co.uk/tags/hugo/</loc>
+    <lastmod>2014-07-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexfreestone.co.uk/categories/hugo/</loc>
     <lastmod>2014-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
