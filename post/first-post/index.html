@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="keyword 1, keyword 2, keyword 3" name="keywords">
+<meta content="Alex Freestone" name="author">
+<meta property="og:title" content="My experience getting started with Hugo - Alex Freestone | Getting Stuff Wrong, Writing About It">
+<meta property="og:url" content="https://alexfreestone.co.uk/post/first-post/">
+<meta property="og:description" content="Your description here">
+<meta property="og:type" content="website" />
+<title>My experience getting started with Hugo | Alex Freestone | Getting Stuff Wrong, Writing About It</title>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<link rel="stylesheet" href="https://alexfreestone.co.uk/css/style.css">
+<link rel="apple-touch-icon" sizes="180x180" href="https://alexfreestone.co.uk/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://alexfreestone.co.uk/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://alexfreestone.co.uk/favicon-16x16.png">
+<link rel="manifest" href="https://alexfreestone.co.uk/site.webmanifest">
+<link rel="mask-icon" href="https://alexfreestone.co.uk/safari-pinned-tab.svg" color="#9900f7">
+<link rel="shortcut icon" href="https://alexfreestone.co.uk/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-config" content="https://alexfreestone.co.uk/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/github.min.css">
+
+</head>
+
+<body>
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://alexfreestone.co.uk"><h1 class="title is-4">Alex Freestone | Getting Stuff Wrong, Writing About It</h1></a>
+      </div>
+    </nav>
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="https://github.com/Briansbum" target="_blank">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://twitter.com/briansbum" target="_blank">
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="/index.xml" target="_blank">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">My experience getting started with Hugo</h1>
+    <h2 class="subtitle is-5">July 3, 2014 by Alex Freestone</h2>
+    
+      <div class="tags">
+    
+        <a class="button is-link" href="/tags/go">go</a>
+    
+        <a class="button is-link" href="/tags/golang">golang</a>
+    
+        <a class="button is-link" href="/tags/hugo">hugo</a>
+    
+        <a class="button is-link" href="/tags/development">development</a>
+    
+</div>
+
+    
+    <div class="content">
+      
+
+<p>It looks like all tech blogs need to start with posts about how the blog was built.
+So here goes.</p>
+
+<p>If you haven&rsquo;t seen the footer I decided to go with <a href="http://gohugo.io/">Hugo</a> to create my blog, it seemed fairly easy and created a static site that I can run on github pages or AWS S3. A recurring theme on this blog will probably be how terrible I am as a developer so this is really a must have feature. That said, Hugo also has a lot of tinkering availble so long as you&rsquo;re happy sticking to a static site, hopefully I&rsquo;ll make use of this and actually get better at CSS/HTML&hellip; &lt;insert laughing image&gt;</p>
+
+<p>To replicate what I&rsquo;ve done you&rsquo;re going to be deploying to a github repo and the Hugo instructions on this method are pretty straightforward. <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Here&rsquo;s a link</a></p>
+
+<p>Less waffle, more detail. In reality it&rsquo;s taken so long to get this working, I probably should have written it myself from scratch. I&rsquo;m going to write down the gotchas I had so that you don&rsquo;t come against them later on, bear in mind as well that if you use a different theme to me, my theme is <a href="https://github.com/mgjohansen/hucore">Hucore</a>, you&rsquo;ll probably have some different issues.</p>
+
+<h2 id="issue-1-public">Issue 1: public</h2>
+
+<p>I didn&rsquo;t set add the <code>public</code> directory as a submodule, when I went to publish my site for the first time I was already so far in to the guides that it took ages to unpick what on earth was going on. Make sure to do this from the beginning.</p>
+
+<h2 id="issue-2-theme">Issue 2: theme</h2>
+
+<p>When I installed the theme I followed the instructions that the theme gave me and just ran <code>git clone</code> into the <code>themes</code> directory. When it came to time to commit into github, which is where I plan on keeping the source for the site, I found myself in a position where the site wouldn&rsquo;t build because git wouldn&rsquo;t commit the directory properly, not to mention that any changes I made to the theme wouldn&rsquo;t commit.</p>
+
+<p>Getting this right meant forking the theme so that I was able to make changes to the source and then adding the theme as a git submodule. You can skip the forking if you&rsquo;re not planning on making any changes to the theme.</p>
+
+<h2 id="issue-3-styling">Issue 3: Styling</h2>
+
+<p>The favicon in Hucore is replaced by editing <code>layout/partials/nav.html</code> which if you didn&rsquo;t fork the theme needs to be copied from <code>themes/hucore/layout/partials/nav.html</code>. To get my icon working I used my <a href="https://realfavicongenerator.net/">favourite icon generator</a>. You can unzip the contents into <code>static</code> and change the URI for the <code>&lt;link&gt;</code> tags to <code>{{ .Site.BaseURL }}</code>.</p>
+
+<p>The top nav doesn&rsquo;t fit long blog names very well if you&rsquo;re working on a small window, I&rsquo;m doing this in a VM so that I don&rsquo;t have to do it on Windows ;), copy <code>nav.html</code> like above and you can seperate the container <code>&lt;div&gt;</code> just copy all the classes and the <code>&lt;nav&gt;</code> tags.</p>
+
+<p>These are probably particular to the Hucore theme but took me a while to solve, mostly because I&rsquo;m bad at html.</p>
+
+<p>I hope this all helped and that my writing wasn&rsquo;t too bad!</p>
+
+    </div>
+    
+        <div class="nav-left">
+    <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2falexfreestone.co.uk%2fpost%2ffirst-post%2f" title="Share on Facebook" target="_blank"><span class="fa fa-facebook fa-2x" aria-hidden="true"></span></a>
+    <a class="nav-item" href="https://plus.google.com/share?url=https%3a%2f%2falexfreestone.co.uk%2fpost%2ffirst-post%2f" title="Share on Google+" target="_blank"><span class="fa fa-google-plus fa-2x" aria-hidden="true"></span></a>
+    <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2falexfreestone.co.uk%2fpost%2ffirst-post%2f" title="Share on LinkedIn" target="_blank"><span class="fa fa-linkedin fa-2x" aria-hidden="true"></span></a>
+    <a class="nav-item" href="https://twitter.com/home?status=My%20experience%20getting%20started%20with%20Hugo - https%3a%2f%2falexfreestone.co.uk%2fpost%2ffirst-post%2f" title="Tweet this" target="_blank"><span class="fa fa-twitter fa-2x"></span></a>
+    <a class="nav-item" href="http://www.reddit.com/submit?url=https%3a%2f%2falexfreestone.co.uk%2fpost%2ffirst-post%2f&title=My%20experience%20getting%20started%20with%20Hugo" title="Share on Reddit" target="_blank"><span class="fa fa-reddit-alien fa-2x" aria-hidden="true"></span></a>
+    
+    </div>
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <aside><div id="disqus_thread"></div></aside>
+    <script type="text/javascript">
+      var disqus_shortname = 'brians-blog1';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; 2017 | <a href="https://github.com/mgjohansen/hucore" target="_blank">Hucore theme</a> & <a href="http://gohugo.io" target="_blank">Hugo</a> ♥</p>
+  </div>
+</section>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js" integrity="sha256-+bhVTaRmJ/c07eV80nU8gD2cBBF0rYkf1txqXlrbvb0=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/dockerfile.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/bash.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/scala.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-121788943-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+</body>

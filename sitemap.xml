@@ -3,17 +3,85 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://alexfreestone.co.uk/post/first-post/</loc>
+    <lastmod>2014-07-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://alexfreestone.co.uk/</loc>
+    <lastmod>2014-07-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexfreestone.co.uk/categories/blogging/</loc>
+    <lastmod>2014-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://alexfreestone.co.uk/categories/</loc>
+    <lastmod>2014-07-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexfreestone.co.uk/categories/development/</loc>
+    <lastmod>2014-07-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexfreestone.co.uk/tags/development/</loc>
+    <lastmod>2014-07-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexfreestone.co.uk/categories/git/</loc>
+    <lastmod>2014-07-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexfreestone.co.uk/tags/go/</loc>
+    <lastmod>2014-07-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexfreestone.co.uk/categories/golang/</loc>
+    <lastmod>2014-07-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexfreestone.co.uk/tags/golang/</loc>
+    <lastmod>2014-07-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexfreestone.co.uk/categories/hugo/</loc>
+    <lastmod>2014-07-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexfreestone.co.uk/tags/hugo/</loc>
+    <lastmod>2014-07-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexfreestone.co.uk/post/</loc>
+    <lastmod>2014-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://alexfreestone.co.uk/tags/</loc>
+    <lastmod>2014-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
